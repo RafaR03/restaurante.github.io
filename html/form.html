@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico_logo.ico">
+    <title>Formulario de pago</title>
+</head>
+
+<body class="fondo">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Portada.html">Hello Burger Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="informacion.html">Historia Restaurante</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="opinion.html">Deja tu reseña</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <img src="../img/nuevo_logo.png" alt="Logo Hello Burger" class="imgHamb">
+                </span>
+            </div>
+        </div>
+    </nav>
+    <form action="" id="miFormulario">
+        <div class="form-control">
+            <div class="mb-3 row">
+                <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="nombre" placeholder="Nombre" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="ciudad" class="col-sm-2 col-form-label">Ciudad</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="ciudad" placeholder="Ciudad" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="region" class="col-sm-2 col-form-label">Región</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="region" placeholder="Región" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="direccion" class="col-sm-2 col-form-label">Dirección</label>
+                <div class="col-sm-10">
+                    <input class="form-control" type="text" id="direccion" placeholder="Dirección" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="costeCompra" class="col-sm-2 col-form-label2">Coste</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="coste" value="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">Confirmar Pago</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Gracias por realizar su compra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¡Compra realizado con éxito!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a href="portada.html" class="btn btn-primary">Ir a la portada</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio autoplay loop controls="hidden">
+        <source src="../audio/mus_fondo.mp3" type="audio/mpeg">
+      </audio>
+      <footer>
+        <p class="licencia" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Hello Burger Form</span> by <span property="cc:attributionName">Rafael Ruz Castañeda</span> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('miFormulario').addEventListener('submit', function(event) {
+            // Evitar que el formulario se envíe de forma predeterminada
+            event.preventDefault();
+    
+            // Mostrar el modal
+            $('#miModal').modal('show');
+        });
+    </script>
+    <script src="../js/scriptForm.js"></script>
+</body>
+
+</html>

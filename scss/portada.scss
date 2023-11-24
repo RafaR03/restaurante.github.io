@@ -1,0 +1,38 @@
+.portada {
+    margin-left: 50px;
+    width: 45%;
+    height: auto;
+    float: left;
+}
+
+.portadaLogo {
+    margin-right: 50px;
+    width: 48%;
+    height: auto;
+    float: right;
+}
+.fondo {
+    background-color: black;
+}
+.Titulo {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.imglogo {
+    width: 90px;
+    height: auto;
+}

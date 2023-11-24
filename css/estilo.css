@@ -1,0 +1,310 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+.portada {
+    margin-left: 50px;
+    width: 45%;
+    height: auto;
+    float: left;
+}
+
+.portadaLogo {
+    margin-right: 50px;
+    width: 48%;
+    height: auto;
+    float: right;
+}
+.fondo {
+    background-color: black;
+}
+.Titulo {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.imglogo {
+    width: 90px;
+    height: auto;
+}
+
+.TituloForm {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 1%;
+}
+
+.TituloPago {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin: 6%;
+}
+
+
+
+.botones {
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.disp-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-col-Izq {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-col-Der {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.subtitulo {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-top: 8%;
+    margin-left: 4.5%;
+}
+.subtitulo_info {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+
+    margin-left: 4.5%;
+}
+
+.Hamburguesa {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.Ingredientes {
+    text-align: left;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 55px;
+}
+
+
+
+.Complementos {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+.imgHamb {
+    width: 90px;
+    height: auto;
+}
+
+.boton_menu {
+    margin-top: 5%;
+    margin-left: 300px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.boton_menu2 {
+    margin-top: 5%;
+    margin-left: 500px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.boton_info {
+    margin-top: 30px;
+    margin-left: 300px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.boton_compra {
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: white;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.boton_pago {
+    padding: 1%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin: 0.65%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 23px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.licencia {
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    margin: 0;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+audio {
+    display: none;
+}
+
+.video {
+    margin-top: 4%;
+    height: auto;
+    width: 48%;
+}
+.carro img{
+    height: 60vh;
+    width: 50vw;
+}
+.carro2 img{
+    height: 60vh;
+    width: 50vw;
+}
+.menu-item{
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 20px;
+}
+.texto_info {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Estilo para hacer el formulario responsive */
+.form-control {
+    max-width: 700px; /* Ajusta el ancho máximo según tus necesidades */
+    margin:2% auto 0 ; /* Centra el formulario en la página */
+}
+.col-form-label{
+    padding-top: 2.5%;
+}
+/* Ajusta el tamaño de las etiquetas y los campos en pantallas pequeñas */
+@media (max-width: 576px) {
+    .col-sm-2,
+    .col-sm-10 {
+        flex: 0 0 100%; /* Establece el ancho de las etiquetas y campos al 100% en pantallas pequeñas */
+    }
+}
+.col-form-label2{
+    padding-top: 1.5%;
+}
+.titopinion {
+    text-align: center;
+    color: white;
+}
+
+#opinionForm {
+    width: 80%;
+    margin-top: 2%;
+    margin-left:10%;
+    margin-right: 15%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#labop {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+#rating, #comentario {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+
+.enviar {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: #45a049;
+}

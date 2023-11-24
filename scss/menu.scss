@@ -1,0 +1,123 @@
+.botones {
+    margin-left: 40%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.disp-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-col-Izq {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-col-Der {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.subtitulo {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin-top: 8%;
+    margin-left: 4.5%;
+}
+.subtitulo_info {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+
+    margin-left: 4.5%;
+}
+
+.Hamburguesa {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.Ingredientes {
+    text-align: left;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 55px;
+}
+
+.Complementos {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+}
+.imgHamb {
+    width: 90px;
+    height: auto;
+}
+
+.boton_menu {
+    margin-top: 5%;
+    margin-left: 300px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.boton_menu2 {
+    margin-top: 5%;
+    margin-left: 500px;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.carro img{
+    height: 60vh;
+    width: 50vw;
+}
+.carro2 img{
+    height: 60vh;
+    width: 50vw;
+}
+.menu-item{
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 20px;
+}
+.texto_info {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
